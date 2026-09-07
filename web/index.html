@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>API Pixel Canvas</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <main>
+    <h1>API Pixel Canvas</h1>
+    <p>64 × 64のキャンバス。APIからの変更を自動表示します。</p>
+    <div class="toolbar">
+      <button id="clear" type="button">Clear</button>
+      <button id="save" type="button">PNGで保存</button>
+      <label><input id="grid" type="checkbox" checked> グリッド線</label>
+      <span id="status" role="status">接続中…</span>
+    </div>
+    <div class="canvas-wrap"><canvas id="canvas" width="64" height="64" aria-label="64 by 64 pixel canvas"></canvas></div>
+    <p class="hint">API: <code>http://localhost:8001</code> / 座標は左上が (0, 0)</p>
+  </main>
+  <script src="/app.js"></script>
+</body>
+</html>
