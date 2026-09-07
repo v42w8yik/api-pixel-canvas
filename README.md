@@ -17,7 +17,7 @@
 ## インストールと起動
 
 ```bash
-git clone https://github.com/YOUR_ACCOUNT/api-pixel-canvas.git
+git clone https://github.com/v42w8yik/api-pixel-canvas.git
 cd api-pixel-canvas
 python3 app.py
 ```
